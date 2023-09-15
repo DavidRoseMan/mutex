@@ -4,7 +4,7 @@
 
 void init_seg(Seg_type *seg_init, unsigned char number_sizeofData)
 {
-    seg_init->lock = 0;
+    seg_init->lock = 1;
     seg_init->Data = (unsigned char xdata *)malloc((size_t)number_sizeofData);
     seg_init->sizeof_Data = number_sizeofData;
 }
